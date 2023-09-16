@@ -1,0 +1,499 @@
+@import url('https://fonts.google.com/specimen/League+Spartan?query=spartan');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 10;
+    color: #222;
+}
+
+h2 {
+    font-size: 41px;
+    line-height: 51px;
+    color: #222;
+
+}
+h3 {
+    font-size: 50px;
+    line-height: 64px;
+}
+ h4 {
+    font-size: 20px;
+    color: #222;
+ }
+ h6{
+    font-weight: 700;
+    font-size: 12px;
+ }
+
+ p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+ }
+ .section-p1 {
+    padding: 40px 80px;
+ }
+ .section-m1 {
+    margin: 20px 0px;
+ }
+ button.normal {
+   font-size: 14px;
+   font-weight: 600;
+   padding: 15px 30px;
+   color: black;
+   background-color: #edb4b4;
+   border-radius: 4px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   transition: o.2s;
+ }
+ button.white {
+   font-size: 13px;
+   font-weight: 600;
+   padding: 11px 18px;
+   color: black;
+   background-color: #edb4b4;
+   border-radius: 4px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   transition: o.2s;
+ }
+ #header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+ }
+
+ #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+ }
+
+#navbar li a{
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 600;
+   color: black; 
+   transition: 0.3s ease;
+ }
+ #navbar li a:hover,
+ #navbar li a.active{
+    color: #088178;
+ }s
+ #navbar li a.active::after,
+ #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:#088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+  /*home page*/
+  #hero {
+    background-image: url("images/Untitled-1.png");
+    height: 90vh;
+    width: 100%;
+    /* background-size: top 25% right 0; */
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px;
+  }
+  #hero h4 {
+    padding-bottom: 15px;
+  }
+#hero h2 {
+    color:#088178;
+}
+#hero button {
+    background-image: url("images/buttan.png");
+    background-color: transparent;
+    color: black;
+    border: 0;
+    padding: 15px 50px 20px 45px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+}
+#feature{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+#feature .fe-box {
+   width: 180px;
+   text-align: center;
+   /* padding: 25px 15px; */
+   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+   border: 1px solid #cce7d0;
+   /* border-radius: 4px; */
+   margin: 15px 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end ;
+   align-items: center;
+   min-width: 300px;
+   height: 50vh;
+   background-size: cover;
+   background-position: center;
+   padding: 20px;
+   border-radius: 25px;
+}
+#feature .fe-box:hover {
+   box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img{
+   width: 100%;
+   margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+   padding: 9px 8px 6px 8px;
+   display: inline;
+   line-height: 1;
+   border-radius: 4px;
+   color: #088178;
+   background-color: #fddde4;
+}
+#feature .fe-box:nth-child(2) h6{
+   background-color: #7be88b;
+}
+#feature .fe-box:nth-child(3) h6{
+   background-color: #cce7d0;
+}
+#product1 {
+   text-align: center;
+}
+#product1 .pro-cotainer {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   flex-wrap: wrap;
+}
+#product1 .pro {
+   width: 23px;
+   min-width: 250px;
+   padding: 10px 12px;
+   border: 1px solid #cce7d0;
+   border-radius: 25px;
+   cursor: pointer;
+   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+   margin: 15px 0;
+   transition: 0.2s ease;
+   position: relative;
+}
+#product1 .pro:hover{
+   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img {
+   width: 100%;
+   border-radius: 20px;
+}
+#product1 .pro .des{
+   text-align: start;
+   padding: 10px 0;
+}
+#product1 .pro .des span{
+   color: #606063;
+   font-size: 12px;
+
+}
+#product1 .pro .des h5 {
+   padding-top: 7px;
+   color: black;
+   font-size: 14px;
+}
+#product1 .pro .des i {
+   font-size: 12px;
+   color: rgb(243, 181, 25);
+}
+#product1 .pro .des h4 {
+   padding-top: 7px;
+   font-size: 15px;
+   font-weight: 700;
+   color: #088178;
+}
+#product1 .pro .cart {
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   border-radius: 50px;
+   background-color: #e8f6ea;
+   font-weight: 500;
+   color: #088178;
+   border: 1px solid #cce7d0;
+   position: absolute;
+   bottom: 20px;
+   right: 15px;
+}
+#banner{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   text-align: center;
+   background-image: url(images/banner.avif);
+   width: 100%;
+   height: 50vh;
+   background-size: cover;
+   background-position: center;
+   padding: 200px;
+}
+#banner h4 {
+  color: #230505;
+  font-size: 35px;
+}
+#banner h2 {
+   color: #230505;
+   font-size: 25px;
+ }
+ #banner h2 span {
+   color: rgb(234, 61, 61);
+ }
+ #banner button:hover {
+   background-color: #088178;
+   color: #fff;
+ }
+ #sm-banner{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+ #sm-banner .banner-box {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end ;
+   align-items: center;
+   background-image: url(images/bb/15-03-co35-eco-all-pc-684x684.webp);
+   min-width: 350px;
+   height: 50vh;
+   background-size: cover;
+   background-position: center;
+   padding: 20px;
+   border-radius: 25px;
+ }
+ #sm-banner .banner-box2{
+   background-image: url(images/bb/11-hd01-Watch6-Classic-kv-pc-1440x640.jpg);
+ }
+ #sm-banner .banner-box3 {
+   background-image: url(images/bb/09-hd02-buds2pro-kv-pc-1440X640-new.webp);
+ }
+ #sm-banner .banner-box2 h4{
+   color: #faf1f1;
+ }
+ #sm-banner .banner-box2 h2{
+   color: #d6e781;
+ }
+ #sm-banner .banner-box2 span{
+   color: #8fc3f1;
+ }
+ #sm-banner h4{
+   color: #222;
+   font-size: 20px;
+   font-weight: 300;
+ }
+ #sm-banner h2 {
+   color: #465b52;
+   font-size: 30px;
+   font-weight: 800;
+ }
+ #sm-banner span {
+   color: #192d24;
+   font-size: 14px;
+   font-weight: 500;
+   padding-bottom: 15px;
+ }
+ #sm-banner .banner-box:hover button{
+   background-color: #088178;
+   border: 1px solid #088178;
+ }
+ #banner3{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+   text-align: center;
+   background-image: url(images/bb/11-hd01-Watch6-Classic-kv-pc-1440x640.jpg);
+   width: 100%;
+   height: 50vh;
+   background-size: cover;
+   background-position: center;
+   padding: 200px;
+}
+#banner3 h4 {
+  color: #f7f0f0;
+  font-size: 35px;
+}
+#banner3 h2 {
+   color: #efafaf;
+   font-size: 25px;
+ }
+ #banner3 h2 span {
+   color: rgb(234, 61, 61);
+ }
+ #banner3 button:hover {
+   background-color: #088178;
+   color: #fff;
+ }
+ #newsletter {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: center;
+   background-image: url(images/bb/newsletter.jpg);
+   background-repeat: no-repeat;
+   background-position: 20% 30%;
+   background-color: blanchedalmond;
+ }
+#newsletter h4{
+   font-size: 34px;
+   font-weight: 800;
+   color: #132322;
+}
+#newsletter p{
+   font-size: 20px;
+   font-weight: 600;
+   color: #172e2c;
+}
+#newsletter p span{
+   color: #c94a1b;
+}
+#newsletter .form{
+   display: flex;
+   width: 40%;
+}
+#newsletter input {
+   height: 3.125rem;
+   padding: 0 1.25em;
+   font-size: 14px;
+   width: 100%;
+   border: 1px solid transparent;
+   border-radius: 4px;
+   outline: none;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+}
+#newsletter button{
+   background-color: #088178;
+   color: white;
+}
+footer{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+footer .col{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin:  50px;
+}
+footer .logo{
+   margin-bottom: 30px;
+}
+footer h4 {
+   font-size: 14px;
+   padding-bottom: 20px;
+}
+footer p {
+   font-size: 13px;
+   margin: 0 0 8px 0;
+}
+footer  a {
+   font-size: 13px;
+   text-decoration: none;
+   margin-bottom: 10px;
+   color:#222;
+}
+footer .follow{
+   margin-top: 20px;
+
+}
+footer .follow {
+   color: #465b52;
+   padding-right: 4px;
+   cursor: pointer;
+}
+footer .install .row img{
+   border: 1px solid #088178;
+   border-radius: 6px;
+}
+footer .install img {
+   margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover {
+color: #088178;
+}
+footer .copyright {
+   width: 100%;
+   text-align: center;
+}
+#sm-banner .banner-box4 {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end ;
+   align-items: center;
+   background-image: url(images/bigscreen.png);
+   min-width: 430px;
+   height: 70vh;
+   background-size: cover;
+   background-position: center;
+   padding: 20px;
+   border-radius: 25px;
+ }
+ #sm-banner .banner-box5 {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end ;
+   align-items: center;
+   background-image: url(images/neobanner.png);
+   min-width: 430px;
+   height: 70vh;
+   background-size: cover;
+   background-position: center;
+   padding: 20px;
+   border-radius: 25px;
+ }
+ #sm-banner .banner-box6 {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end ;
+   align-items: center; 
+   background-image: url(images/samrtmonitor.png);
+   min-width: 430px;
+   height: 70vh;
+   background-size: cover;
+   background-position: center;
+   padding: 20px;
+   border-radius: 25px;
+ }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shop.css">
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <section id="header">
+        <a href="main.html"><img src="images/rlogo.png" class="logo" alt=""></a>
+        <div> 
+            <ul id="navbar">
+                <li><a href="main.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <li><a class="active" href="user.html"><i class="far fa-user"></i></a></li>
+            </ul>
+        </div>
+
+     </section>
+     <section id="form-section">
+        <div class="container form-container">
+            <div class="form-box loginform">
+                <h7>Login</h7>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="username" required placeholder="Username">
+                        <i class="far fa-user-circle"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="passward" required placeholder="Password">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="save-forget">
+                       <label >
+                        <input type="checkbox">Save This.
+                       </label>
+                       <a href="Forget Passward?"> Forget Password?</a>
+                    </div>
+                    <button type="submit">Login</button>
+                    <div class="register-link">
+                        <p>Don't have an account?</p>
+                        <a href="" class="logintext">Register</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box signupform">
+                <h7>Sign UP</h7>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="username" required placeholder="Username">
+                        <i class="far fa-user-circle"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" required placeholder="Email">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="passward" required placeholder="Password">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="save-forget">
+                       <label >
+                        <input type="checkbox">Accept This.
+                       </label>
+                       <a href="Forget Passward?"> Term & conditions</a>
+                    </div>
+                    <button type="submit">SignUp</button>
+                    <div class="register-link">
+                        <p>Already have an account?</p>
+                        <a href="" class="signuptext">Login</a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+     </section>
+
+     <script>
+       let logintext = document.querySelector('.logintext');
+       let signuptext = document.querySelector('.signuptext');
+       let FormWrapper = document.querySelector('.form-container');
+
+       logintext.addEventListener('click',(event)=>{
+        event.preventDefault();
+        FormWrapper.classList.toggle('signupform-active');
+       });
+       signuptext.addEventListener('click',(event)=>{
+        event.preventDefault();
+        FormWrapper.classList.remove('signupform-active');
+       });
+
+     </script>
+    <footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="images/logo.png" alt="">
+        <h4>contact</h4>
+        <p><strong>Address</strong> Boys Hostel, Nit Nagaland,dimapur</p>
+        <p><strong>Phone</strong>+91 8107989689 /+91 9983092235</p>
+        <p><strong>Hours</strong> 9:00am-12:00pm ,Mon-sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="user.html">Sign In</a>
+        <a href="cart.html">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="orders.html">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Gooogle Play</p>
+        <div class="row">
+            <img src="images/bb/App store.png" alt="">
+            <img src="images/bb/google-play-badge.png" alt="">
+            <div>
+                <p>Secured Payment Gateway</p>
+                <img src="images/bb/payment.png">
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023 Smartzone. All rights reserved.</p>
+    </div>
+     </footer>
+</body>
+</html>

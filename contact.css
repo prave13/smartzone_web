@@ -1,0 +1,304 @@
+@import url('https://fonts.google.com/specimen/League+Spartan?query=spartan');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+
+}
+h1 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 10;
+    color: #222;
+}
+
+h2 {
+    font-size: 41px;
+    line-height: 51px;
+    color: #222;
+
+}
+h3 {
+    font-size: 50px;
+    line-height: 64px;
+}
+ h4 {
+    font-size: 20px;
+    color: #222;
+ }
+ h6{
+    font-weight: 700;
+    font-size: 12px;
+ }
+
+ p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+ }
+ .section-p1 {
+    padding: 40px 80px;
+ }
+ .section-m1 {
+    margin: 20px 0px;
+ }
+ button.normal {
+   font-size: 14px;
+   font-weight: 600;
+   padding: 15px 30px;
+   color: black;
+   background-color: #edb4b4;
+   border-radius: 4px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   transition: o.2s;
+ }
+ button.white {
+   font-size: 13px;
+   font-weight: 600;
+   padding: 11px 18px;
+   color: black;
+   background-color: #edb4b4;
+   border-radius: 4px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   transition: o.2s;
+ }
+ #header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+ }
+
+ #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+ }
+
+#navbar li a{
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 600;
+   color: black; 
+   transition: 0.3s ease;
+ }
+ #navbar li a:hover,
+ #navbar li a.active{
+    color: #088178;
+ }s
+ #navbar li a.active::after,
+ #navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:#088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+.contact {
+    position: relative;
+    min-height: 40vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    background-size: cover;
+
+}
+.contact .contact {
+    max-width: 800px;
+    text-align: center;
+}
+.contact .contact h4 {
+
+    font-size: 40px;
+    font-weight: 700;
+    color: #281c1c;
+}
+.contact .contact p{
+    font-weight: 300;
+    color: #281c1c;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: rgb(241, 143, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #211a1a;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactinfo .box .text h3 {
+    font-weight: 500;
+    color: #281c1c;
+}
+.contactform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    min-width: 500px;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 25px;
+}
+.contactform h4 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 450px;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox input:valid ~ span{
+color: #e91e63;
+font-size: 12px;
+transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"] {
+ width: 100px;
+ background: #00bcd4;
+ color: #fff;
+ border: none;
+ cursor: pointer;
+ padding: 10px;
+ font-size: 18px;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:  50px;
+ }
+ footer .logo{
+    margin-bottom: 30px;
+ }
+ footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+ }
+ footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+ }
+ footer  a {
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color:#222;
+ }
+ footer .follow{
+    margin-top: 20px;
+ 
+ }
+ footer .follow {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+ }
+ footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+ }
+ footer .install img {
+    margin: 10px 0 15px 0;
+ }
+ footer .follow i:hover,
+ footer a:hover {
+ color: #088178;
+ }
+ footer .copyright {
+    width: 100%;
+    text-align: center;
+ }
